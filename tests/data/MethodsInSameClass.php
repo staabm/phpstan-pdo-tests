@@ -6,15 +6,16 @@ use function PHPStan\Testing\assertType;
 
 class MethodsInSameClass
 {
-    protected function query(PDO $pdo): \PDOStatement
+    protected function query(\PDO $pdo): \PDOStatement
     {
         return $pdo->query("SELECT * FROM users");
     }
 
-    public function processResults(PDO $pdo): void
+    public function processResults(\PDO $pdo): void
     {
         $results = $this->query($pdo);
         foreach ($results as $resultRow) {
+            // ❌ Actual   :'array<int|string, mixed>'
             assertType(\stdClass::class, $resultRow);
         }
     }
