@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="CLI Arguments" tests="11" assertions="11" errors="0" failures="6" skipped="0" time="0.008901">
+    <testsuite name="TypeInferenceTest" file="C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php" tests="11" assertions="11" errors="0" failures="6" skipped="0" time="0.008901">
+      <testcase name="testDefaultFetchMode" file="C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php" line="20" class="TypeInferenceTest" classname="TypeInferenceTest" assertions="1" time="0.002118"/>
+      <testsuite name="TypeInferenceTest::testFileAsserts" tests="10" assertions="10" errors="0" failures="6" skipped="0" time="0.006783">
+        <testcase name="testFileAsserts with data set &quot;C:\projects\phpstan-pdo-tests\tests\data\InSameMethod.php:14&quot;" file="C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php" line="29" class="TypeInferenceTest" classname="TypeInferenceTest" assertions="1" time="0.005556">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">TypeInferenceTest::testFileAsserts with data set "C:\projects\phpstan-pdo-tests\tests\data\InSameMethod.php:14"&#13;
+Expected type stdClass, got type array&lt;int, stdClass&gt; in C:\projects\phpstan-pdo-tests\tests\data\InSameMethod.php on line 14.
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'stdClass'
++'array&lt;int, stdClass&gt;'
+&#13;
+phar://C:/projects/phpstan-pdo-tests/vendor/phpstan/phpstan/phpstan.phar/src/Testing/TypeInferenceTestCase.php:82
+C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php:35</failure>
+        </testcase>
+        <testcase name="testFileAsserts with data set &quot;C:\projects\phpstan-pdo-tests\tests\data\InSameMethod.php:23&quot;" file="C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php" line="29" class="TypeInferenceTest" classname="TypeInferenceTest" assertions="1" time="0.000233">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">TypeInferenceTest::testFileAsserts with data set "C:\projects\phpstan-pdo-tests\tests\data\InSameMethod.php:23"&#13;
+Expected type stdClass, got type array&lt;int, stdClass&gt; in C:\projects\phpstan-pdo-tests\tests\data\InSameMethod.php on line 23.
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'stdClass'
++'array&lt;int, stdClass&gt;'
+&#13;
+phar://C:/projects/phpstan-pdo-tests/vendor/phpstan/phpstan/phpstan.phar/src/Testing/TypeInferenceTestCase.php:82
+C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php:35</failure>
+        </testcase>
+        <testcase name="testFileAsserts with data set &quot;C:\projects\phpstan-pdo-tests\tests\data\InSameMethod.php:32&quot;" file="C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php" line="29" class="TypeInferenceTest" classname="TypeInferenceTest" assertions="1" time="0.000071"/>
+        <testcase name="testFileAsserts with data set &quot;C:\projects\phpstan-pdo-tests\tests\data\InSameMethod.php:41&quot;" file="C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php" line="29" class="TypeInferenceTest" classname="TypeInferenceTest" assertions="1" time="0.000060"/>
+        <testcase name="testFileAsserts with data set &quot;C:\projects\phpstan-pdo-tests\tests\data\MethodsInSameClass.php:18&quot;" file="C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php" line="29" class="TypeInferenceTest" classname="TypeInferenceTest" assertions="1" time="0.000191">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">TypeInferenceTest::testFileAsserts with data set "C:\projects\phpstan-pdo-tests\tests\data\MethodsInSameClass.php:18"&#13;
+Expected type stdClass, got type array&lt;int|string, mixed&gt; in C:\projects\phpstan-pdo-tests\tests\data\MethodsInSameClass.php on line 18.
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'stdClass'
++'array&lt;int|string, mixed&gt;'
+&#13;
+phar://C:/projects/phpstan-pdo-tests/vendor/phpstan/phpstan/phpstan.phar/src/Testing/TypeInferenceTestCase.php:82
+C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php:35</failure>
+        </testcase>
+        <testcase name="testFileAsserts with data set &quot;C:\projects\phpstan-pdo-tests\tests\data\InDifferentClass.php:15&quot;" file="C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php" line="29" class="TypeInferenceTest" classname="TypeInferenceTest" assertions="1" time="0.000189">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">TypeInferenceTest::testFileAsserts with data set "C:\projects\phpstan-pdo-tests\tests\data\InDifferentClass.php:15"&#13;
+Expected type stdClass, got type array&lt;int|string, mixed&gt; in C:\projects\phpstan-pdo-tests\tests\data\InDifferentClass.php on line 15.
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'stdClass'
++'array&lt;int|string, mixed&gt;'
+&#13;
+phar://C:/projects/phpstan-pdo-tests/vendor/phpstan/phpstan/phpstan.phar/src/Testing/TypeInferenceTestCase.php:82
+C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php:35</failure>
+        </testcase>
+        <testcase name="testFileAsserts with data set &quot;C:\projects\phpstan-pdo-tests\tests\data\InDifferentClass.php:25&quot;" file="C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php" line="29" class="TypeInferenceTest" classname="TypeInferenceTest" assertions="1" time="0.000179">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">TypeInferenceTest::testFileAsserts with data set "C:\projects\phpstan-pdo-tests\tests\data\InDifferentClass.php:25"&#13;
+Expected type stdClass, got type array&lt;int|string, mixed&gt; in C:\projects\phpstan-pdo-tests\tests\data\InDifferentClass.php on line 25.
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'stdClass'
++'array&lt;int|string, mixed&gt;'
+&#13;
+phar://C:/projects/phpstan-pdo-tests/vendor/phpstan/phpstan/phpstan.phar/src/Testing/TypeInferenceTestCase.php:82
+C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php:35</failure>
+        </testcase>
+        <testcase name="testFileAsserts with data set &quot;C:\projects\phpstan-pdo-tests\tests\data\InDifferentClass.php:34&quot;" file="C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php" line="29" class="TypeInferenceTest" classname="TypeInferenceTest" assertions="1" time="0.000059"/>
+        <testcase name="testFileAsserts with data set &quot;C:\projects\phpstan-pdo-tests\tests\data\InDifferentClass.php:42&quot;" file="C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php" line="29" class="TypeInferenceTest" classname="TypeInferenceTest" assertions="1" time="0.000052"/>
+        <testcase name="testFileAsserts with data set &quot;C:\projects\phpstan-pdo-tests\tests\data\phpdoc-only.php:10&quot;" file="C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php" line="29" class="TypeInferenceTest" classname="TypeInferenceTest" assertions="1" time="0.000192">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">TypeInferenceTest::testFileAsserts with data set "C:\projects\phpstan-pdo-tests\tests\data\phpdoc-only.php:10"&#13;
+Expected type stdClass, got type array&lt;int|string, mixed&gt; in C:\projects\phpstan-pdo-tests\tests\data\phpdoc-only.php on line 10.
+Failed asserting that two strings are identical.
+--- Expected
++++ Actual
+@@ @@
+-'stdClass'
++'array&lt;int|string, mixed&gt;'
+&#13;
+phar://C:/projects/phpstan-pdo-tests/vendor/phpstan/phpstan/phpstan.phar/src/Testing/TypeInferenceTestCase.php:82
+C:\projects\phpstan-pdo-tests\tests\TypeInferenceTest.php:35</failure>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

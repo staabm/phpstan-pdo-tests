@@ -1,0 +1,14 @@
+{
+  "require": {
+    "ext-pdo": "*",
+    "phpstan/phpstan": "^2.1",
+    "staabm/phpstan-dba": "^0.3.3",
+    "phpunit/phpunit": "^11.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "AllenJB\\PHPStanPdoTests\\": "tests/",
+      "AllenJB\\PHPStanPdoTests\\Data\\": "tests/data/"
+    }
+  }
+}

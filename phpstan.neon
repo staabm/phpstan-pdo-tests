@@ -1,0 +1,10 @@
+includes:
+  - ./vendor/staabm/phpstan-dba/config/dba.neon
+parameters:
+  level: max
+  paths:
+    - tests/
+  excludePaths:
+    - *tests/data/**
+  bootstrapFiles:
+    - bootstrap.php
