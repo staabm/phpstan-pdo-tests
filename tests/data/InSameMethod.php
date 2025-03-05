@@ -10,7 +10,7 @@ class InSameMethod
     {
         $results = $pdo->query("SELECT * FROM users");
         foreach ($results as $resultRow) {
-            // ❌ Actual   :'array<int, stdClass>'
+            // ✔️ Works as expected
             assertType('object{userid: int<0, 4294967295>, email: string, password_hash: string}&stdClass', $resultRow);
         }
     }
@@ -19,7 +19,7 @@ class InSameMethod
     {
         $results = $pdo->query("SELECT userid, email FROM users");
         foreach ($results as $resultRow) {
-            // ❌ Actual   :'array<int, stdClass>'
+            // ✔️ Works as expected
             assertType('object{userid: int<0, 4294967295>, email: string}&stdClass', $resultRow);
         }
     }
