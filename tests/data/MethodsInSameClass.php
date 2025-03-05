@@ -16,7 +16,7 @@ class MethodsInSameClass
         $results = $this->query($pdo);
         foreach ($results as $resultRow) {
             // ❌ Actual   :'array<int|string, mixed>'
-            assertType(\stdClass::class, $resultRow);
+            assertType('object{userid: int<0, 4294967295>, email: string}&stdClass', $resultRow);
         }
     }
 }

@@ -12,7 +12,7 @@ class InDifferentClass
         $results = $repo->queryStar($pdo);
         foreach ($results as $resultRow) {
             // ❌ Actual   :'array<int|string, mixed>'
-            assertType(\stdClass::class, $resultRow);
+            assertType('object{userid: int<0, 4294967295>, email: string, password_hash: string}&stdClass', $resultRow);
         }
     }
 
@@ -22,7 +22,7 @@ class InDifferentClass
         $results = $repo->queryColumnList($pdo);
         foreach ($results as $resultRow) {
             // ❌ Actual   :'array<int|string, mixed>'
-            assertType(\stdClass::class, $resultRow);
+            assertType('object{userid: int<0, 4294967295>, email: string}&stdClass', $resultRow);
         }
     }
 
