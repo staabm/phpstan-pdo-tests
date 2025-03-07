@@ -9,6 +9,9 @@ class InDifferentClassRepository
         return $pdo->query("SELECT * FROM users");
     }
 
+    /**
+     * @return iterable<object{userid: int<0, 4294967295>, email: string}&stdClass>
+     */
     public function queryColumnList(\PDO $pdo): \PDOStatement
     {
         return $pdo->query("SELECT userid, email FROM users");
