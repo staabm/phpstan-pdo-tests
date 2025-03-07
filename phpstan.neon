@@ -8,3 +8,4 @@ parameters:
     - *tests/data/**
   bootstrapFiles:
     - bootstrap.php
+

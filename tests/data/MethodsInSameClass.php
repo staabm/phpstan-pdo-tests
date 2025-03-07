@@ -6,6 +6,9 @@ use function PHPStan\Testing\assertType;
 
 class MethodsInSameClass
 {
+    /**
+     * @return PdoStatementType<int, object{userid: int<0, 4294967295>, email: string, password_hash: string}&stdClass}&stdClass>
+     */
     protected function query(\PDO $pdo): \PDOStatement
     {
         return $pdo->query("SELECT * FROM users");
