@@ -1,6 +1,6 @@
 <?php
 /**
- * @var \PDOStatement $results
+ * @var iterable<stdClass> $results
  */
 
 use function PHPStan\Testing\assertType;
